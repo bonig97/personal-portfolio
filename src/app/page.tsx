@@ -1,5 +1,9 @@
+import { ThemeToggle } from "./components/ThemeToggle";
+
 export default function Portfolio() {
     return (
-        <main className="min-h-screen bg-white dark:bg-[#1A1A1A] text-gray-900 dark:text-white overflow-x-hidden"></main>
+        <main className="min-h-screen bg-background text-foreground overflow-x-hidden">
+            <ThemeToggle />
+        </main>
     );
 }

@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio
 
-## Getting Started
+Personal developer portfolio built with modern web technologies to
+showcase projects, technical experience, and professional background.
 
-First, run the development server:
+Live demo: 
+https://bonig97.github.io/personal-portfolio/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+------------------------------------------------------------------------
+
+## Overview
+
+This project is a personal portfolio website designed to present:
+
+-   Professional experience and system architecture projects
+-   Technical skills and impact
+-   Contact information and CV downloads
+-   Responsive UI with light/dark theme support
+
+The focus is on clarity, performance, and maintainability.
+
+------------------------------------------------------------------------
+
+## Tech Stack
+
+-   **Framework:** Next.js 16 (App Router, Static Export)
+-   **Language:** TypeScript
+-   **Styling:** Tailwind CSS 4 + CSS Variables
+-   **Animations:** Framer Motion
+-   **Deployment:** GitHub Pages (Static Export)
+-   **CI/CD:** GitHub Actions
+
+------------------------------------------------------------------------
+
+## Development
+
+### Prerequisites
+
+-   Node.js ≥ 20
+
+### Install dependencies
+
+``` bash
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Run locally
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+``` bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open http://localhost:3000
 
-## Learn More
+------------------------------------------------------------------------
 
-To learn more about Next.js, take a look at the following resources:
+## Production Build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+``` bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The static website will be generated in the `out/` directory.
 
-## Deploy on Vercel
+------------------------------------------------------------------------
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is automatically deployed to GitHub Pages via GitHub
+Actions on every push to `main`.
+
+Configuration can be found in:
+
+-   `next.config.mjs`
+-   `.github/workflows/deploy.yml`
+
+------------------------------------------------------------------------
+
+## Resume
+
+Two resume versions are provided:
+
+-   EU market
+-   Switzerland market
+
+They are available for download directly from the website.
+
+------------------------------------------------------------------------
+
+## Contact
+
+Email: bonig97@proton.me\
+LinkedIn: https://www.linkedin.com/in/gabriele-boni-a87a35141/
+
+------------------------------------------------------------------------
+
+## License
+
+This project is for personal portfolio use. All rights reserved.

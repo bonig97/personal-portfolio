@@ -3,8 +3,7 @@
 Personal developer portfolio built with modern web technologies to
 showcase projects, technical experience, and professional background.
 
-Live demo: 
-https://bonig97.github.io/personal-portfolio/
+Live demo: https://bonig97.netlify.app/
 
 ------------------------------------------------------------------------
 
@@ -23,12 +22,13 @@ The focus is on clarity, performance, and maintainability.
 
 ## Tech Stack
 
--   **Framework:** Next.js 16 (App Router, Static Export)
+-   **Framework:** Next.js 16
 -   **Language:** TypeScript
 -   **Styling:** Tailwind CSS 4 + CSS Variables
 -   **Animations:** Framer Motion
--   **Deployment:** GitHub Pages (Static Export)
--   **CI/CD:** GitHub Actions
+-   **Email Service:** Resend
+-   **Deployment:** Netlify
+-   **CI/CD:** Netlify + GitHub
 
 ------------------------------------------------------------------------
 
@@ -60,19 +60,19 @@ Open http://localhost:3000
 npm run build
 ```
 
-The static website will be generated in the `out/` directory.
+Build output is optimized for deployment on Netlify.
 
 ------------------------------------------------------------------------
 
 ## Deployment
 
-This project is automatically deployed to GitHub Pages via GitHub
-Actions on every push to `main`.
+The project is deployed on Netlify with automatic builds on push.
 
-Configuration can be found in:
+Environment variables required:
 
--   `next.config.mjs`
--   `.github/workflows/deploy.yml`
+-   `RESEND_API_KEY`
+
+They must be configured in the deployment platform.
 
 ------------------------------------------------------------------------
 

@@ -38,6 +38,10 @@ export default function SystemArchitecture() {
                                 "REST APIs",
                                 "Algolia",
                             ],
+                            links: [
+                                { label: "KitchenAid IT", url: "https://www.kitchenaid.it/" },
+                                { label: "KitchenAid US", url: "https://www.kitchenaid.com/" },
+                            ],
                         },
                         {
                             title: 'Home Appliance Repair Microservices Platform',
@@ -60,6 +64,16 @@ export default function SystemArchitecture() {
                                 'CloudWatch',
                                 'GitLab CI'
                             ],
+                            links: [
+                                {
+                                    label: "Whirlpool IT Support",
+                                    url: "https://www.whirlpool.it/supporto/fissa-un-appuntamento/easy-service",
+                                },
+                                {
+                                    label: "Indesit IT Support",
+                                    url: "https://www.indesit.it/assistenza/fuori-garanzia",
+                                },
+                            ],
                         },
                         {
                             title: 'Global Retail Store Locator Microservice',
@@ -77,6 +91,16 @@ export default function SystemArchitecture() {
                                 'AWS Lambda',
                                 'REST APIs',
                                 'Google Docs'
+                            ],
+                            links: [
+                                {
+                                    label: "Whirlpool IT Locator",
+                                    url: "https://www.whirlpool.it/supporto/service-locator",
+                                },
+                                {
+                                    label: "Indesit IT Locator",
+                                    url: "https://www.indesit.it/store-locator",
+                                },
                             ],
                         },
                         {
@@ -134,6 +158,39 @@ export default function SystemArchitecture() {
 									</span>
                                 ))}
                             </div>
+                            {project.links && project.links.length > 0 && (
+                                <div className="mt-6">
+                                    <h4 className="text-sm font-semibold mb-2 text-gray-900 dark:text-white">
+                                        Live Examples
+                                    </h4>
+                                    <div className="flex flex-wrap gap-3">
+                                        {project.links.map((link, i) => (
+                                            <a
+                                                key={i}
+                                                href={link.url}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="
+                                                    inline-flex items-center
+                                                    px-3 py-1.5
+                                                    text-sm font-medium
+                                                    rounded-md
+                                                    border
+                                                    transition-colors
+                                                    bg-background/50
+                                                    text-foreground/80
+                                                    border-foreground/15
+                                                    hover:bg-foreground/5
+                                                    hover:text-foreground
+                                                    hover:border-foreground/30
+                                                  "
+                                            >
+                                                {link.label}
+                                            </a>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </motion.div>
                     ))}
                 </div>
